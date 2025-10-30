@@ -1,5 +1,5 @@
 {% set name = "nomad-schema-plugin-simulation-workflow" %}
-{% set version = "1.0.10" %}
+{% set version = "1.0.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nomad_schema_plugin_simulation_workflow-{{ version }}.tar.gz
-  sha256: a011ec7ffe93e681f9b3e16809151b5c4c03a54c80405777f0e11cc525b3f859
+  sha256: 99cc4fa65b9c0649d7985399688b6fecbb933d97dfcc0f4db59c33aba758bcc8
 
 build:
   noarch: python
