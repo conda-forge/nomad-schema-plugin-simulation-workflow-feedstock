@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: nomad-schema-plugin-simulation-workflow
-  version: "1.0.11"
+  version: "1.0.12"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/nomad_schema_plugin_simulation_workflow-${{ version }}.tar.gz
-  sha256: 99cc4fa65b9c0649d7985399688b6fecbb933d97dfcc0f4db59c33aba758bcc8
+  sha256: 39164d6667b099e94b5993fe2a380df6541b9151898539431c48d9e313aeab9f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
